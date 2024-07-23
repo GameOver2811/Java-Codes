@@ -59,8 +59,7 @@ class Studetns extends Person {
 
     @Override
     public String toString() {
-        String str = "Name : "+ this.getName()+", Course : " + this.getCourse();
-        return str;
+        return "Name : "+ this.getName()+", Course : " + this.getCourse();
     }
 }
 
@@ -91,8 +90,8 @@ class Employee extends Person {
 
     @Override
     public String toString() {
-        String str = "Name : "+ this.getName()+", Salary : " + this.getSalary();
-        return str;
+        return "Name : "+ this.getName()+", Salary : " + this.getSalary();
+
     }
 }
 
