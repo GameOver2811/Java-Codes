@@ -1,0 +1,10 @@
+javax.sevlet.http.HttpSession
+
+methods ---->
+1. setAttribute(String name, Object obj); ----------------------> setting attribute/session with its value.
+2. getAttribute(String name); ------------------------> getting session details.
+3. setMaxInactiveInterval(long time); ---------------------> for setting some default active session timing.
+4. invalidate();          -------------------> for log out operation.
+5. getSession(); -----------------> returns http session object (if exist it returns that object otherwise creates new one)
+6. getSession(boolean b); --------------> return new obj if b is true, behaves same as getSession() if b is false.
+7. Listener ----------> It is used for logging out application from other devices if logged into new device.
