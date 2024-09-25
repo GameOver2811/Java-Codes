@@ -1,5 +1,7 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class StreamAPI {
     public static void main(String[] args) {
@@ -31,8 +33,12 @@ public class StreamAPI {
                 .reduce(0, Integer::sum);
         System.out.println("sum: "+ ans);
 
-//        Reduce
+        Object[] doubleList = list.stream()
+                .mapToDouble(n -> n)
+                .boxed()
+                        .toArray();
 
+        System.out.println(Arrays.toString(doubleList));
 
     }
 }
